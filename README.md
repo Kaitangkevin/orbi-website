@@ -1,161 +1,134 @@
 <div align="center">
   <img src="dist/assets/orbi-icon.png" width="112" alt="Orbi app icon">
   <h1>Orbi for Mac</h1>
-  <p><strong>小小刘海，大有可为。<br>A little notch. A lot more possibility.</strong></p>
-  <p>音乐、日程与剪贴板，触手可及。<br>Music, calendar, and clipboard — right at the top of your Mac.</p>
+  <p><strong>Your everyday essentials. Right at the top of your Mac.</strong></p>
+  <p>Music, calendar, and clipboard in one lightweight notch workspace.</p>
   <p>
-    <a href="https://kaitangkevin.github.io/orbi-website/">官方网站 · Website</a> ·
-    <a href="https://kaitangkevin.github.io/orbi-website/download/">下载与使用 · Download</a> ·
-    <a href="#关于开发者--about-the-developer">独立开发者 · Developer</a> ·
-    <a href="#english">English</a>
+    <a href="https://kaitangkevin.github.io/orbi-website/">Explore the Website</a> ·
+    <a href="https://kaitangkevin.github.io/orbi-website/download/">Download & Setup</a> ·
+    <a href="#about-the-developer">Meet the Developer</a>
   </p>
-  <p><strong>macOS · Orbi 1.0 · 独立开发 · 中英双语</strong></p>
+  <p><strong>macOS · Version 1.0 · Independently Developed</strong></p>
 </div>
 
 ---
 
-## 关于 Orbi
+## Meet Orbi
 
-Orbi 是一款面向 Mac 的轻量顶部工作台。它把音乐控制、今日日程和文字剪贴板整合在屏幕顶部的刘海区域：鼠标移入时展开，移开后收起，让你处理小事时少切换一个窗口。
+Skip a song. Check what’s next. Find the text you just copied. Orbi brings these everyday actions together at the top of your Mac, so you can spend less time switching windows and more time on what matters.
 
-这个项目关注的是日常使用中的细节：下一首歌、下一场安排、刚刚复制的一段文字。让它们更容易触达，同时把注意力留给正在做的事情。
+Move your pointer into the notch area to open your workspace. Move away, and it returns to a compact view. It’s a small addition to your desktop, designed around the things you do throughout the day.
 
-> **仓库范围**：这里包含 Orbi 官网、产品展示素材和 DMG 安装包，不包含原生 macOS 应用源码。仓库公开可见不等于采用开源许可证；使用与转载边界见下方版权声明。
+**This repository contains the Orbi website, presentation assets, and installer—not the native macOS application’s source code.** Public visibility does not grant an open-source license. See [Copyright & Usage](#copyright--usage).
 
-## 产品能力
+## What Orbi Can Do
 
-| 功能 | 当前支持 | 使用边界 |
+| Feature | Capabilities | What to know |
 | --- | --- | --- |
-| **刘海工作台** | 鼠标移入展开，移出后延迟收起；集中展示三个模块 | 主要界面在屏幕顶部，并提供菜单栏入口 |
-| **Apple Music 控制** | 当前歌曲与艺人、播放 / 暂停、上一首 / 下一首 | 需要允许对“音乐”应用的自动化访问 |
-| **音频状态** | 展示其他发声应用的名称、播放状态和音频律动 | 不代表对所有播放器都提供切歌和歌曲详情 |
-| **今日日程** | 显示正在进行或接下来的日程、时间与所属日历 | 依赖 macOS 日历访问权限 |
-| **文字剪贴板** | 最近 15 条文字记录、点选重新复制、清空历史 | 当前实现面向文字，不是文件或图片剪贴板 |
-| **个性化设置** | 音乐 / 日历 / 剪贴板显示开关、开机启动 | 隐藏模块不等于撤销访问权限或停止后台监测 |
-| **语言** | 中文、英文、跟随系统 | 官网也提供中英文切换 |
+| **Notch workspace** | Hover to expand; move away to collapse after a short delay | Lives at the top of the screen, with a menu bar entry |
+| **Apple Music controls** | Track and artist details, play/pause, previous and next track | Requires automation access to the Music app |
+| **Audio activity** | App name, playback activity, and a responsive waveform for other audio sources | Universal track details and playback controls are not claimed |
+| **Today’s calendar** | Current or upcoming event, start time, and calendar name | Requires calendar access |
+| **Text clipboard** | Up to 15 recent text entries, click to copy again, and clear history | Text history; not a file or image clipboard |
+| **Personalization** | Choose visible modules and launch at login | Hiding a module does not revoke permissions or stop monitoring |
+| **Language options** | English, Simplified Chinese, or your system language | The website also supports English and Chinese |
 
-## 产品展示
+## Take a Closer Look
 
-以下三张截图来自**官网的产品交互演示**，使用示例内容，并非原生应用实拍。你可以在[官网](https://kaitangkevin.github.io/orbi-website/)体验展开、示例播放控制与模块切换。
+Captured at a **1440 × 1000 desktop viewport**. These screenshots show the website’s interactive product demonstrations with sample content, not native app captures. Try the demos on the [website](https://kaitangkevin.github.io/orbi-website/).
 
-<table>
-  <tr>
-    <th>产品首页</th>
-    <th>文字剪贴板</th>
-    <th>模块工作台</th>
-  </tr>
-  <tr>
-    <td><img src="docs/screenshots/workspace.png" width="280" alt="Orbi 官网首页与收起的刘海演示"></td>
-    <td><img src="docs/screenshots/clipboard.png" width="280" alt="Orbi 官网文字剪贴板功能展示"></td>
-    <td><img src="docs/screenshots/modules.png" width="280" alt="Orbi 官网音乐、日历与剪贴板模块展示"></td>
-  </tr>
-</table>
+### One workspace, within reach
 
-### 安装图解
+Music, your next event, and recently copied text appear together in an expandable panel.
 
-![Orbi 安装图解：打开 DMG、拖入 Applications、启动 Orbi](dist/assets/orbi-install-guide.png)
+![Orbi desktop website showing the expanded music, calendar, and clipboard workspace](docs/screenshots/workspace.png)
 
-*由开发者提供的安装示意图。图中的 `Orbi.dmg` 对应本仓库的 `Orbi-1.0.dmg`。*
+### Keep good ideas moving
 
-## 下载与首次使用
+Find recent text without retracing your steps. Select a clipboard entry to bring it back into your workflow.
 
-**[下载 Orbi 1.0（DMG）](https://kaitangkevin.github.io/orbi-website/downloads/Orbi-1.0.dmg)** · 约 3.4 MB · [完整安装与权限指南](https://kaitangkevin.github.io/orbi-website/download/)
+![Desktop demonstration of Orbi text clipboard history](docs/screenshots/clipboard.png)
 
-1. 下载并打开 `Orbi-1.0.dmg`。
-2. 将 Orbi 拖入 **Applications（应用程序）** 文件夹，等待复制完成。
-3. 从“应用程序”中打开 Orbi；鼠标移至屏幕顶部中央，展开工作台。
-4. 按功能用途查看系统权限请求，并在 Orbi 设置中调整模块和语言。
+### Make room for what you need
 
-当前版本**没有 Apple Developer ID 签名证书**。macOS 可能无法验证开发者或检查应用安全性。只有确认来源可信、文件未被篡改并接受风险后，才按[安装指南](https://kaitangkevin.github.io/orbi-website/download/#install)及 [Apple 官方说明](https://support.apple.com/zh-cn/102445)处理首次打开提示。请勿关闭系统整体安全保护。
+Choose which modules appear in your workspace. Keep the essentials visible and the rest out of the way.
 
-最低 macOS 版本和芯片兼容范围尚未正式确认，请勿据此假定支持所有 Mac。
+![Desktop demonstration of Orbi module customization](docs/screenshots/modules.png)
 
-### 权限与数据访问
+## Download & Install
 
-- **日历**：用于读取并展示日程；当前应用请求日历完整访问权限。
-- **自动化 · 音乐**：用于读取 Apple Music 信息并发送播放控制指令。
-- **系统音频**：用于检测音频活动并显示律动，授权行为以系统提示为准。
-- **剪贴板**：应用运行时监测新复制的文字。隐藏剪贴板模块不会停止监测；需要停止时请退出 Orbi。
+**[Download Orbi 1.0 for Mac](https://kaitangkevin.github.io/orbi-website/downloads/Orbi-1.0.dmg)** · DMG · Approximately 3.4 MB
 
-官网交互演示使用示例数据，不会读取访客的音乐、日历或剪贴板。安装后的原生应用与官网演示是两个不同的运行环境。
+1. Download and open **Orbi-1.0.dmg**.
+2. Drag **Orbi** into **Applications** and wait for the copy to finish.
+3. Open Orbi from Applications, then move your pointer to the top center of your screen.
+4. Review the permission requests and choose your preferred modules and language in Settings.
 
-## 关于开发者 / About the developer
+![Orbi installation guide: open the DMG, drag Orbi into Applications, and launch the app](dist/assets/orbi-install-guide.png)
 
-我是 **[Kaitangkevin](https://github.com/Kaitangkevin)**，Orbi 的独立开发者。
+*Installation illustration provided by the developer. The image’s “Orbi.dmg” refers to the “Orbi-1.0.dmg” download linked above.*
 
-Orbi 是我的个人产品项目。我希望从 Mac 上那些反复发生的小动作出发，做一款轻巧、清晰、容易融入日常的工具：需要时出现，专注时退到一旁。
+### Before your first launch
 
-我正在持续完善产品体验，也欢迎具体的使用反馈。对我来说，比不断增加功能更重要的是，让已有功能更自然、更可靠，让每一个交互都有明确的用途。
+The current installer **does not have an Apple Developer ID signing certificate**. macOS may be unable to verify the developer or check the app for malicious software. Only proceed if you trust the source, know the file has not been altered, and accept the risks of unsigned software.
 
-**Orbi 是独立开发项目，并非 Apple 官方产品，也不表示获得 Apple 的认可或背书。**
+Read the [first-launch guide](https://kaitangkevin.github.io/orbi-website/download/#install) and [Apple’s official guidance](https://support.apple.com/en-us/102445). Do not disable system-wide security protections.
 
-### 反馈与联系
+Minimum macOS version and chip compatibility have not been formally confirmed. Do not assume support for every Mac.
 
-欢迎通过 [GitHub Issues](https://github.com/Kaitangkevin/orbi-website/issues)提交功能建议、官网问题或使用反馈。请尽量附上 macOS 版本、Orbi 版本、复现步骤与预期行为；截图前请隐藏个人日程、剪贴板内容及其他隐私信息。
+## Permissions & Data Access
 
-商业合作或内容使用授权，可先通过 [GitHub 个人主页](https://github.com/Kaitangkevin)联系开发者。请勿在公开 Issue 中提交密码、访问令牌或私人资料。
+| Access | Purpose |
+| --- | --- |
+| **Calendar** | Reads and displays your schedule. The current app requests full calendar access. |
+| **Automation: Music** | Reads current Apple Music information and sends playback commands. |
+| **System audio** | Detects audio activity to drive the waveform; review any macOS authorization prompts. |
+| **Clipboard** | Monitors newly copied text while Orbi is running and keeps up to 15 entries. |
 
-## 版权与使用声明
+**Module visibility is separate from data access.** Hiding the clipboard module does not stop monitoring in the current version. Quit Orbi to stop it. Manage applicable system permissions in macOS Settings.
 
-**Copyright © 2026 Kaitangkevin. All rights reserved. 保留所有权利。**
+The website demos use sample data and do not access your music, calendar, or clipboard. The installed app and website demos are separate environments.
 
-本项目未以 MIT、Apache、GPL 或其他开源许可证发布。除法律允许的使用、GitHub 平台条款所赋予的权利，以及另行取得的明确授权外：
+## About the Developer
 
-- **禁止抄袭与冒名发布**：不得将本项目的代码、原创文案、图像或设计素材冒充为自己的原创成果，不得移除作者署名后重新发布。
-- **禁止未经授权复制与改作**：不得复制、改编、转载或重新分发本项目中受版权保护的内容，也不得换名打包、制作衍生分发版本或用于商业销售。
-- **禁止未经授权使用品牌素材**：不得使用 Orbi 名称、图标及视觉素材，使他人误认为你的产品、网站或服务由本开发者提供或授权。
-- **公开可见不构成额外授权**：查看仓库或使用 GitHub 平台功能，不代表获得上述内容的商业使用、再分发或改作许可。引用来源本身也不等于取得授权。
+I’m **[Kaitangkevin](https://github.com/Kaitangkevin)**, the independent developer behind Orbi.
 
-欢迎分享本项目的**官方链接**。如需转载、使用素材、商业合作或其他授权，请先联系开发者并取得明确书面许可。
+Orbi is my personal product project. I’m building it around a simple idea: the small actions you repeat every day should feel easier, clearer, and less distracting. A useful tool should be there when you need it and give you space when you don’t.
 
-以上声明仅针对权利人依法享有权利的内容，不主张对通用功能、抽象创意或第三方资产的专有权。第三方组件、商标及素材的权利归其各自权利人，并适用各自的许可条款。
+My focus is on refining the everyday experience: thoughtful interactions, practical features, and a workspace that fits naturally into the way people use their Macs. I’m continuing to improve Orbi and welcome specific, constructive feedback from people using it.
 
----
+**Orbi is an independent project. It is not an official Apple product and is not endorsed by Apple.**
 
-<a id="english"></a>
+## Feedback & Contact
 
-## English
+Have a bug report, feature request, or website issue? [Open an issue](https://github.com/Kaitangkevin/orbi-website/issues) with:
 
-### What is Orbi?
+- Your macOS version and Orbi version.
+- Steps to reproduce the issue.
+- What you expected and what actually happened.
+- A screenshot, if helpful, with private information removed.
 
-Orbi is an independently developed notch workspace for Mac. It brings music controls, today’s events, and recent copied text to the top of your screen. Hover to expand; move away to return to a compact view.
+Please do not post passwords, access tokens, personal calendar details, or private clipboard contents in public issues. For collaboration or content-use requests, start with my [GitHub profile](https://github.com/Kaitangkevin).
 
-This repository contains the **website, presentation assets, and downloadable installer**, not the native macOS app’s source code. Public visibility does not make the project open source.
+## Copyright & Usage
 
-### Capabilities
+**Copyright © 2026 Kaitangkevin. All rights reserved.**
 
-- **Apple Music:** track and artist information, play/pause, and previous/next controls.
-- **Audio activity:** app identity, playback state, and waveform for other audio sources; universal track control is not claimed.
-- **Calendar:** today’s current or upcoming event, time, and calendar name.
-- **Text clipboard:** up to 15 recent entries, select to copy again, and clear history.
-- **Personalization:** module visibility, launch at login, and Chinese, English, or system language.
+This project is not released under MIT, Apache, GPL, or another open-source license. Except where permitted by applicable law, GitHub’s platform terms, or express authorization:
 
-The screenshots above show the **website’s interactive recreations with sample content**, not native app captures. The installation illustration was supplied by the developer.
+- **No plagiarism or misrepresentation.** Do not present protected code, original copy, images, or design assets as your own, or remove attribution and republish them.
+- **No unauthorized copying or redistribution.** Do not reproduce, adapt, repackage, redistribute, or commercially exploit protected project content without permission.
+- **No misleading use of branding.** Do not use Orbi’s name, icon, or visual assets in a way that implies an affiliation, endorsement, or authorization that does not exist.
+- **Public access is not an additional license.** Viewing this repository or using GitHub’s platform features does not grant commercial-use, redistribution, or adaptation rights. Attribution alone does not grant permission.
 
-### Install
+Sharing **official project links** is welcome. Contact the developer and obtain express written permission before reusing protected content or assets.
 
-[Download Orbi 1.0](https://kaitangkevin.github.io/orbi-website/downloads/Orbi-1.0.dmg), open the DMG, drag Orbi into Applications, and launch it from there. Read the [setup and permissions guide](https://kaitangkevin.github.io/orbi-website/download/) before first use.
-
-The current installer has no Apple Developer ID signing certificate. Review macOS warnings and only proceed if you trust the source and accept the risk. Minimum macOS and chip compatibility remain unconfirmed. Hiding a module does not revoke permissions; clipboard monitoring continues while the app runs.
-
-### About the independent developer
-
-I’m **[Kaitangkevin](https://github.com/Kaitangkevin)**, the independent developer behind Orbi. This is my personal product project, focused on making small, frequent interactions on the Mac easier to reach and less distracting. I’m continuing to refine the experience and welcome specific feedback through [Issues](https://github.com/Kaitangkevin/orbi-website/issues).
-
-Orbi is independent and is not an official Apple product or endorsed by Apple.
-
-### Copyright and permitted use
-
-**Copyright © 2026 Kaitangkevin. All rights reserved.** No open-source license is granted.
-
-Except where permitted by applicable law, GitHub’s platform terms, or express authorization, unauthorized copying, adaptation, redistribution, commercial exploitation, removal of attribution, and presenting protected project content as your own are prohibited. Do not use Orbi branding to imply affiliation or authorization. Attribution alone does not grant permission.
-
-Sharing official project links is welcome. Contact the developer for written permission before reusing protected content. These notices cover only rights held by the relevant rights holder, not general functionality, abstract ideas, or third-party assets. Third-party rights and licenses remain with their respective owners.
+These notices apply only to rights held by the relevant rights holder. They do not claim exclusive rights over general functionality, abstract ideas, or third-party assets. Third-party components, trademarks, and materials remain subject to their respective owners’ rights and licenses.
 
 ---
 
 <details>
-<summary><strong>Repository guide / 仓库维护说明</strong></summary>
+<summary><strong>Repository guide</strong></summary>
 
 | Path | Purpose |
 | --- | --- |
