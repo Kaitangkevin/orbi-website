@@ -41,19 +41,19 @@ Captured at a **1440 × 1000 desktop viewport**. These screenshots show the webs
 
 Music, your next event, and recently copied text appear together in an expandable panel.
 
-![Orbi desktop website showing the expanded music, calendar, and clipboard workspace](docs/screenshots/workspace.png)
+![Orbi desktop website showing the expanded music, calendar, and clipboard workspace](docs/screenshots/workspace.jpg)
 
 ### Keep good ideas moving
 
 Find recent text without retracing your steps. Select a clipboard entry to bring it back into your workflow.
 
-![Desktop demonstration of Orbi text clipboard history](docs/screenshots/clipboard.png)
+![Desktop demonstration of Orbi text clipboard history](docs/screenshots/clipboard.jpg)
 
 ### Make room for what you need
 
 Choose which modules appear in your workspace. Keep the essentials visible and the rest out of the way.
 
-![Desktop demonstration of Orbi module customization](docs/screenshots/modules.png)
+![Desktop demonstration of Orbi module customization](docs/screenshots/modules.jpg)
 
 ## Download & Install
 
