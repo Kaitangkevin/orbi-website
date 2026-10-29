@@ -4,8 +4,8 @@
   <p><strong>Your everyday essentials. Right at the top of your Mac.</strong></p>
   <p>Music, calendar, and clipboard in one lightweight notch workspace.</p>
   <p>
-    <a href="https://kaitangkevin.github.io/orbi-website/">Explore the Website</a> ·
-    <a href="https://kaitangkevin.github.io/orbi-website/download/">Download & Setup</a> ·
+    <a href="https://kaitangkevin.github.io/orbi-website/?v=20261028-footer">Explore the Website</a> ·
+    <a href="https://kaitangkevin.github.io/orbi-website/download/?v=20261028-footer">Download & Setup</a> ·
     <a href="#about-the-developer">Meet the Developer</a>
   </p>
   <p><strong>macOS · Version 1.0 · Independently Developed</strong></p>
@@ -35,7 +35,7 @@ Move your pointer into the notch area to open your workspace. Move away, and it 
 
 ## Take a Closer Look
 
-Captured at a **1440 × 1000 desktop viewport**. These screenshots show the website’s interactive product demonstrations with sample content, not native app captures. Try the demos on the [website](https://kaitangkevin.github.io/orbi-website/).
+Captured at a **1440 × 1000 desktop viewport**. These screenshots show the website’s interactive product demonstrations with sample content, not native app captures. Try the demos on the [website](https://kaitangkevin.github.io/orbi-website/?v=20261028-footer).
 
 ### One workspace, within reach
 
@@ -72,7 +72,7 @@ Choose which modules appear in your workspace. Keep the essentials visible and t
 
 The current installer **does not have an Apple Developer ID signing certificate**. macOS may be unable to verify the developer or check the app for malicious software. Only proceed if you trust the source, know the file has not been altered, and accept the risks of unsigned software.
 
-Read the [first-launch guide](https://kaitangkevin.github.io/orbi-website/download/#install) and [Apple’s official guidance](https://support.apple.com/en-us/102445). Do not disable system-wide security protections.
+Read the [first-launch guide](https://kaitangkevin.github.io/orbi-website/download/?v=20261028-footer#install) and [Apple’s official guidance](https://support.apple.com/en-us/102445). Do not disable system-wide security protections.
 
 Minimum macOS version and chip compatibility have not been formally confirmed. Do not assume support for every Mac.
 
