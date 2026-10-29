@@ -9,3 +9,27 @@ h1,h2,h3{overflow-wrap:break-word}h1{max-width:1200px;margin-inline:auto}.hero>h
 @media(max-width:900px){.release-card{grid-template-columns:68px 1fr;gap:20px}.release-card img{width:68px;height:68px}.release-card>.pill{grid-column:2;justify-self:start}.onboarding-cards,.values-grid{gap:15px}.onboarding-card{padding:25px}.origin-section,.today-section,.transparency-section{gap:35px}.value-card{padding:28px 10px}}
 @media(max-width:650px){.info-hero{padding-top:45px}.info-hero h1,.about-hero h1{font-size:clamp(36px,9.5vw,50px)}html:lang(zh-CN) .product-hero h1{font-size:clamp(40px,11vw,52px)}.release-card{padding:24px 20px;margin-top:32px;gap:16px}.release-copy h2{font-size:24px}.release-copy p{font-size:14px}.release-meta{display:grid;gap:10px;font-size:12px}.release-card>.pill{grid-column:1/-1;width:100%}.guide-nav{gap:18px;padding:20px 14px;font-size:13px}.section-heading{margin-bottom:30px}.section-heading h2,.faq-section h2{font-size:34px}.section-heading p{font-size:16px}.gatekeeper{padding:26px 22px}.gate-heading{align-items:start;gap:12px}.gate-heading h3{font-size:21px}.gatekeeper ol{padding-left:20px}.onboarding-cards,.values-grid,.permission-grid,.origin-section,.today-section,.transparency-section,.manage-note{grid-template-columns:1fr}.permission-card{padding:26px}.manage-note{gap:0}.manage-note p{margin-top:0}.about-hero{min-height:560px}.origin-section{gap:10px}.origin-copy p{font-size:17px}.manifesto .section{padding-block:80px}.manifesto h2{font-size:32px}.value-card{padding:25px 5px}.today-section{gap:25px}.today-list li{font-size:16px}.transparency-section{gap:0}.about-end .actions{flex-wrap:wrap}.hero h1 br{display:block}html:lang(zh-CN) .hero h1{padding-inline:0;text-indent:0}.section-top{gap:24px}}
 .install-figure{margin:0 0 48px}.install-figure img{display:block;width:100%;height:auto;border-radius:22px;border:1px solid #e0e3ee}.install-figure figcaption{font-size:14px;line-height:1.8;color:#777e90;margin:18px 4px 0;max-width:900px}.install-figure figcaption a{color:#0066cc;display:inline-block;margin-left:10px}.release-card>.download-button{white-space:nowrap}@media(max-width:900px){.release-card>.download-button{grid-column:2;justify-self:start}}@media(max-width:650px){.release-card>.download-button{grid-column:1/-1;width:100%}.install-figure img{border-radius:12px}.install-figure figcaption a{margin-left:0;display:block}}
+
+/* Homepage badges stay in index.html so they are present without JavaScript. */
+.featured-on{max-width:1140px;margin:0 auto;padding:28px 32px 40px;border-top:1px solid #e6e7eb}
+.featured-on h2{margin:0 0 18px;font-size:12px;font-weight:600;line-height:1.5;letter-spacing:.12em;color:#777;text-transform:uppercase}
+.featured-badges{display:flex;flex-wrap:wrap;align-items:center;gap:16px 24px;list-style:none;margin:0;padding:0}
+.featured-badges li{max-width:100%}
+.featured-badges a{display:inline-flex;max-width:100%;border-radius:6px}
+.featured-badges img{display:block;max-width:100%;height:auto}
+@media(max-width:700px){.featured-on{padding:24px 32px 32px}.featured-badges{gap:16px}}
+
+/* Shared footer */
+.site-footer{max-width:1140px;margin:auto;padding:56px 32px 0;border-top:1px solid #dddde1;color:#777}
+.footer-grid{display:grid;grid-template-columns:1.6fr 1fr 1.2fr 1.1fr;gap:40px;padding-bottom:48px}
+.footer-brand .logo{color:#1d1d1f;display:inline-block}
+.footer-brand p,.footer-column p{font-size:14px;line-height:1.8;margin:16px 0;max-width:240px}
+.footer-credit{font-size:12px;color:#888}
+.footer-column{display:flex;flex-direction:column;align-items:flex-start;gap:13px;font-size:14px}
+.footer-column h2{font-size:12px;font-weight:600;letter-spacing:.06em;line-height:1.5;margin:0 0 7px;color:#1d1d1f}
+.footer-column p{margin:0;font-size:13px}
+.studio-name{font-size:22px;font-weight:600;letter-spacing:-.04em;color:#1d1d1f}
+.site-footer a:hover{color:#0066cc}
+.footer-bottom{border-top:1px solid #e6e7eb;padding:24px 0;display:flex;align-items:center;justify-content:space-between;gap:18px;font-size:12px;line-height:1.6}
+@media(max-width:850px){.footer-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:36px}}
+@media(max-width:480px){.site-footer{padding:36px 24px 0}.footer-grid{gap:32px 22px}.footer-brand{grid-column:1/-1}.footer-bottom{align-items:flex-start;flex-direction:column}.featured-on{padding-inline:24px}}
